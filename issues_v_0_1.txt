@@ -1,0 +1,23 @@
+Gradle issue - 
+
+Error - Minimum supported Gradle version is 5.6.4. Current version is 4.10.3.
+
+File - 
+/platforms/android/cordova/lib/builders/ProjectBuilder.js
+\platforms\android\gradle\wrapper\gradle-wrapper.properties
+
+var distributionUrl = ‘https\://services.gradle.org/distributions/gradle-5.6.4-all.zip’;
+
+
+=====================================================================================================================
+An unhandled exception occurred: Cannot find module '@angular-devkit/build-angular/src/angular-cli-files/models/webpack-configs/utils'
+
+npm install --save-dev @angular-devkit/build-angular
+or
+npm i @ionic/angular-toolkit@latest
+
+
+=====================================================================================================================
+This project uses AndroidX dependencies, but the 'android.useAndroidX' property is not enabled. Set this property to true in the gradle.properties file and retry.
+npm i cordova-plugin-androidx
+npm i cordova-plugin-androidx-adapter
